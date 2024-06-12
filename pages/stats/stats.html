@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobster Development</title>
+  <link rel="stylesheet" href="./stats.css" />
+  <link rel="stylesheet" href="./../../components/navbar/navbar.css" />
+  <link rel="stylesheet" href="./../../components/sidebar/sidebar.css" />
+  <link rel="stylesheet" href="./../../styles/general.css" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="main">
+    <!-- sidebar -->
+    <div class="sidebar show-sidebar" id="sidebar"></div>
+
+    <!-- right -->
+    <div class="right">
+      <!-- navbar -->
+      <div id="nav"></div>
+
+      <!-- page content -->
+      <section class="page-content">
+        <div class="top-stats">
+          <!-- pending applications -->
+          <div>
+            <div class="po gold-text">
+              <div>
+                <p>28</p>
+                <div class="icon-holder-gold">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+              </div>
+              <h1 class="title small">Pending Application</h3>
+            </div>
+            <!-- color bar -->
+            <div class="color-bar gold"></div>
+          </div>
+          <div>
+            <div class="po blue-text">
+              <div>
+                <p>25</p>
+
+                <div class="icon-holder-blue">
+                  <ion-icon name="calendar-number"></ion-icon>
+                </div>
+              </div>
+              <h1 class="title small">Interviews Scheduled</h1>
+            </div>
+            <!-- color bar -->
+            <div class="color-bar blue"></div>
+          </div>
+
+          <div>
+            <div class="po red-text">
+              <div>
+                <p>22</p>
+                <div class="icon-holder-red">
+                  <ion-icon name="bug"></ion-icon>
+                </div>
+              </div>
+              <h1 class="title small">Jobs Declined</h1>
+            </div>
+            <!-- color bar -->
+            <div class="color-bar red"></div>
+          </div>
+
+        </div>
+
+        <h1 class="title">Monthly Applications</h1>
+
+        <div class="chart-container">
+          <canvas id="myBarChart"></canvas>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="./stats.js"></script>
+  <script src="./../../components/navbar/navbar.js"></script>
+  <script src="./../../components/sidebar/sidebar.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

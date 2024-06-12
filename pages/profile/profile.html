@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jobster Development</title>
+  <link rel="stylesheet" href="./profile.css" />
+  <link rel="stylesheet" href="./../../components/navbar/navbar.css" />
+  <link rel="stylesheet" href="./../../components/sidebar/sidebar.css" />
+  <link rel="stylesheet" href="./../../styles/general.css" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="main">
+    <!-- sidebar -->
+    <div class="sidebar show-sidebar" id="sidebar"></div>
+
+    <!-- right -->
+    <div class="right">
+      <!-- navbar -->
+      <div id="nav"></div>
+
+      <!-- page content -->
+      <section class="page-content">
+        <div class="white-card">
+          <h2 class="title">Profile</h2>
+
+          <div class="form-holder">
+            <div class="top">
+              <div>
+                <label for="registerName">Name</label><br>
+                <input type="text" id="registerName" name="registerName" required>
+              </div>
+              <div>
+                <label for="registerEmail">Last Name</label><br>
+                <input type="email" id="registerEmail" name="registerEmail" required>
+              </div>
+              <div>
+                <label for="registerPassword">Email</label><br>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div>
+                <label for="registerPassword">Location</label><br>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+              </div>
+              <div>
+                <button class="save-btn" type="submit" onclick="registerUser()">Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="./../../components/navbar/navbar.js"></script>
+  <script src="./../../components/sidebar/sidebar.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

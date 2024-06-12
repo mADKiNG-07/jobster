@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobster Development</title>
+  <link rel="stylesheet" href="./register.css">
+  <link rel="stylesheet" href="./../../styles/general.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- form -->
+  <main>
+    <div class="form-container">
+      <!-- blue bar -->
+      <div class="blue"></div>
+
+      <!-- login -->
+      <div id="loginForm" class="form">
+        <img src="./../../images/logo.35bb8e1d9b5745af32ff148cbee51dfa.svg" width="200" alt="">
+        <h2 class="title">Login</h2>
+        <form id="loginFormElement">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="loginEmail" required>
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="loginPassword" required>
+          <a href="./../../pages/stats/stats.html">
+            <button type="submit">Submit</button>
+          </a>
+        </form>
+        <a href="./../../pages/stats/stats.html">
+          <button class="button-2" type="submit">Demo App</button>
+        </a>
+        <p class="not-a-member">Not a member yet? <a href="#" id="showRegister">Register</a></p>
+      </div>
+
+      <!-- register -->
+      <div id="registerForm" class="form hidden">
+        <img src="./../../images/logo.35bb8e1d9b5745af32ff148cbee51dfa.svg" width="200" alt="">
+        <h2 class="title">Register</h2>
+        <form id="registerFormElement">
+          <label for="registerName">Name:</label>
+          <input type="text" id="registerName" name="registerName" required>
+          <label for="registerEmail">Email:</label>
+          <input type="email" id="registerEmail" name="registerEmail" required>
+          <label for="registerPassword">Password:</label>
+          <input type="password" id="registerPassword" name="registerPassword" required>
+          <a href="./../../pages/stats/stats.html">
+            <button type="submit">Register</button>
+          </a>
+        </form>
+        <a href="./../../pages/stats/stats.html">
+          <button class="button-2" type="submit">Demo App</button>
+        </a>
+        <p class="not-a-member">Already have an account? <a href="#" id="showLogin">Login</a></p>
+      </div>
+    </div>
+
+  </main>
+  <!-- js -->
+  <script src="./../../db/pouchdb-8.0.1.min.js"></script>
+  <script src="./register.js"></script>
+</body>
+
+</html>

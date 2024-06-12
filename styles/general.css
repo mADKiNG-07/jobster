@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  letter-spacing: 1.2px;
+  font-size: 15px;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+}
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+
+.right {
+  width: 80%;
+  height: 100vh;
+  margin-left: 20%; /* width of the sidebar */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page-content {
+  /* margin-top: 60px; height of the navbar */
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.white-card {
+  width: 90%;
+  height: 300px;
+  padding-bottom: 25px;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .white-card {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  .right {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

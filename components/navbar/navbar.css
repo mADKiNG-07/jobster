@@ -1,0 +1,111 @@
+#nav {
+  width: 100%;
+  background-color: white;
+}
+
+nav {
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.controls {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hamburger > ion-icon {
+  font-size: 40px;
+  color: #3b82f6;
+}
+
+button {
+  padding: 4px 12px;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-btn > button > ion-icon {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.user-btn > button > div > ion-icon {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.user-btn {
+  position: relative;
+}
+
+.logout-btn {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #bfdbfe;
+  margin-top: 5px;
+  padding: 8px 12px;
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+.logout-btn.show {
+  display: block; /* Show when 'show' class is added */
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
